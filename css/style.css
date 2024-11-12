@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Funnel Display", sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #191c32;
+}
+.wrapper {
+    min-height: 100vh;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+.brand span {
+    color: aqua;
+}
+
+.brand {
+    margin-top: -7px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+}
+
+.menu a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.menu .active {
+    color: aqua;
+}
+
+.menu a:hover {
+    background-color: aqua;
+    color: #191c32;
+    transition: ease-in 0.4s;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+span {
+    color: aqua;
+}
+
+.downloadCV {
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+    transition: ease-in 0.3s;
+}
+
+.downloadCV:hover {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.main img {
+    width: 350px;
+    height: auto;
+    border: 7px solid aqua;
+}
+
+.sobremi {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+}
+
+.sobremi img {
+    width: 100%;
+    height: 100vh;
+    grid-column: 1/5;
+}
+
+.info-sobremi {
+    padding: 3em;
+    grid-column: 5/10;
+}
+
+.info-sobremi h2 {
+    font-size: 2em;
+    color: #191c32;
+}
+
+.divider {
+    background-color: aqua;
+    width: 60px;
+    height: 4px;
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+
+.sobremi p {
+    margin-bottom: 1em;
+}
+
+.portafolio {
+    width: 100%;
+    color: #fff;
+    background-color: #191c32;
+}
+
+.portafolio-encabezados {
+    padding: 5em;
+}
+
+.portafolio-encabezados h2 {
+    font-size: 2.5em;
+}
+
+.portafolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    background-color: #101e4b;
+    margin: 1em;
+}
+
+.card__img {
+    width: 100%;
+    height: 150px;
+    background-image: url("../source/bomberosProyect.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.card__title {
+    padding: 20px;
+}
+
+.card__proyectos-links {
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card__proyectos-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card__proyectos-links i {
+    font-size: 1.5em;
+}
+
+.card .card__proyectos-detalles {
+    margin: 0 auto;
+    margin: 1em;
+    width: 70%;
+}
+
+.card .card__proyecto-detalles a {
+    text-decoration: none;
+    color: #191c32;
+    text-transform: uppercase;
+}
+
+.card__proyecto-detalles-contenido {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.contacto-encabezados h2 {
+    font-size: 3em;
+}
+
+.contacto-encabezados {
+    padding: 5em;
+}
+
+.container-contacto {
+    display: flex;
+    padding: 3em;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.contact-form__control {
+    display: flex;
+    width: 30vw;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contact-form__control input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.contact-form__control textarea {
+    height: 150px;
+    background: none;
+    color: #fff;
+    padding: 1.5em;
+    border-bottom: 1px solid #fff;
+    resize: none;
+}
+
+.contact-form__button {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: aqua;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+    transition: .5s ease-in;
+}
+
+.contact-form__button:hover {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.contacto-seccion {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    background-color: aqua;
+}
+
+.footer-contenido h2 {
+    font-size: 3em;
+}
+
+.footer-contenido h5,
+.redes-sociales i {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.redes-sociales {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+.redes-sociales a {
+    color: #fff;
+}
